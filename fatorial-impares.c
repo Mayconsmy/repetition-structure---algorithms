@@ -8,10 +8,12 @@ int main(){
 	int fat,i,n;
 	
 	for(n = 1; n <= 11; n += 2){
-
-		for(i = n; i >= 1; i = i - 1){
+	i = n;
+	fat = 1;	
+		while(i >= 1)
+		{
 			fat = fat * i;
-				
+			i -= 1;
 		}		
 	printf("%d! = %d \n", n, fat);	
 	}
